@@ -1,0 +1,99 @@
+The_LandLords.Rsa Website
+
+Project Overview
+
+The_LandLords.Rsa is a streetwear fashion brand website developed as part of the WEDE5020 Web Development Portfolio of Evidence (POE).
+
+The website aims to establish an online presence for the brand by showcasing its clothing collections, providing information about the business, and allowing customers to submit product enquiries.
+
+The brand focuses on teenagers and young adults who are interested in streetwear culture, Y2K fashion, basketball-inspired clothing, and self-expression through fashion.
+
+Slogan:
+"RENT IS DUE"
+
+Website Purpose
+
+The purpose of the website is to:
+
+- Promote The_LandLords.Rsa brand.
+- Showcase clothing collections.
+- Provide information about the company.
+- Allow customers to submit enquiries.
+- Increase brand awareness.
+- Create a foundation for future e-commerce functionality.
+
+Target Audience
+
+The website is intended for:
+
+- Teenagers
+- Young Adults
+- Streetwear Enthusiasts
+- Fashion-Conscious Consumers
+- Basketball Culture Enthusiasts
+
+Website Pages
+
+Home Page
+Introduces visitors to the brand and showcases featured collections and new product releases.
+
+About Page
+Provides information about the history, mission, vision, and values of The_LandLords.Rsa.
+
+Shop Page
+Displays available collections and products offered by the brand.
+
+Enquiry Page
+Allows customers to submit enquiries regarding products, sizes, pricing, and availability.
+
+Contact Page
+Provides contact details and social media links for customer communication.
+
+Collections Featured
+
+- Mansion Affairs
+- Golden Resort
+- Angel Kind
+- Love Hoops Dreams
+
+Technologies Used
+
+- HTML5
+
+Future development may include:
+
+- CSS3
+- JavaScript
+- E-commerce functionality
+- Online payment integration
+
+Folder Structure
+
+TheLandlordsRSA
+
+├── index.html
+├── about.html
+├── shop.html
+├── enquiry.html
+├── contact.html
+
+├── images
+│   ├── banners
+│   ├── collections
+│   └── logo
+
+├── README.md
+
+└── CHANGELOG.md
+
+---
+
+## Author
+
+Luyanda
+
+Rosebank College
+
+WEDE5020 – Web Development
+
+2026
