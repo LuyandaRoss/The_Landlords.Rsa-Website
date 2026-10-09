@@ -4,7 +4,7 @@ Project Overview
 
 The_LandLords.Rsa is a streetwear fashion brand website developed as part of the WEDE5020 Web Development Portfolio of Evidence (POE).
 The website aims to establish an online presence for the brand by showcasing its clothing collections, providing information about the business, and allowing customers to submit product enquiries.
-The brand focuses on teenagers and young adults who are interested in streetwear culture, Y2K fashion, basketball-inspired clothing, and self-expression through fashion.
+The brand focuses on teenagers and young adults who are interested in streetwear culture, Y2K fashion, basketball-inspired clothing, and self-expression through fashion, this is a fictional brand website
 
 Slogan:
 "RENT IS DUE"
