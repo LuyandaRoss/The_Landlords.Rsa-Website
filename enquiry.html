@@ -5,163 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The_LandLords.Rsa | Enquiry</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="site.css">
+    <script src="site.js" defer></script>
 </head>
 
 <body>
-
-    <header>
-
-        <h1>The_LandLords.Rsa</h1>
-
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="shop.html">Shop</a> |
-            <a href="enquiry.html">Enquiry</a> |
-            <a href="contact.html">Contact</a>
-        </nav>
-
-        <hr>
-
-    </header>
-
+    <header class="site-header"><a class="brand-logo" href="index.html"><img src="images/logo.png" alt="THE LANDLORDS.RSA" class="logo"></a><nav class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="shop.html">Shop</a><a href="enquiry.html" aria-current="page">Enquiry</a><a href="contact.html">Contact</a></nav></header>
     <main>
-
-        <section>
-
-            <h2>Product Enquiry Form</h2>
-
-            <p>
-                Complete the form below and we will contact you regarding
-                your selected product.
-            </p>
-
-        </section>
-
-        <hr>
-
-        <section>
-
-            <form>
-
-                <fieldset>
-
-                    <legend>Customer Information</legend>
-
-                    <label for="fullname">Full Name:</label>
-                    <br>
-                    <input type="text" id="fullname" name="fullname" required>
-                    <br><br>
-
-                    <label for="email">Email Address:</label>
-                    <br>
-                    <input type="email" id="email" name="email" required>
-                    <br><br>
-
-                    <label for="phone">Phone Number:</label>
-                    <br>
-                    <input type="tel" id="phone" name="phone">
-                    <br><br>
-
-                </fieldset>
-
-                <br>
-
-                <fieldset>
-
-                    <legend>Product Details</legend>
-
-                    <label for="collection">Collection:</label>
-                    <br>
-
-                    <select id="collection" name="collection">
-
-                        <option>Mansion Affairs</option>
-                        <option>Golden Resort</option>
-                        <option>Angel Kind</option>
-                        <option>Love Hoops Dreams</option>
-
-                    </select>
-
-                    <br><br>
-
-                    <label for="product">Product Type:</label>
-                    <br>
-
-                    <select id="product" name="product">
-
-                        <option>Hoodie</option>
-                        <option>T-Shirt</option>
-                        <option>Crop Top</option>
-                        <option>Jacket</option>
-
-                    </select>
-
-                    <br><br>
-
-                    <label for="size">Size:</label>
-                    <br>
-
-                    <select id="size" name="size">
-
-                        <option>Small</option>
-                        <option>Medium</option>
-                        <option>Large</option>
-                        <option>XL</option>
-                        <option>XXL</option>
-
-                    </select>
-
-                    <br><br>
-
-                    <label for="quantity">Quantity:</label>
-                    <br>
-
-                    <input type="number"
-                           id="quantity"
-                           name="quantity"
-                           min="1">
-
-                </fieldset>
-
-                <br>
-
-                <fieldset>
-
-                    <legend>Additional Information</legend>
-
-                    <label for="message">Message:</label>
-                    <br>
-
-                    <textarea id="message"
-                              name="message"
-                              rows="6"
-                              cols="50"></textarea>
-
-                </fieldset>
-
-                <br>
-
-                <input type="submit" value="Submit Enquiry">
-                <input type="reset" value="Clear Form">
-
-            </form>
-
-        </section>
-
+        <section class="page-hero"><span class="eyebrow">04 / Product desk</span><h1>Claim<br>your piece.</h1><p>Tell us what you want from the current drop and we will help with availability, sizing and orders.</p></section>
+        <section class="section"><div class="form-layout"><div><span class="eyebrow">The brief</span><h2>Details<br>matter.</h2><div class="copy"><p>Choose your collection, garment, size and quantity. We will contact you with the next steps.</p><p class="lede">Products are currently made available through direct enquiry.</p></div></div><div class="form-panel"><form data-enquiry-form><fieldset><legend>Your details</legend><label for="fullname">Full name</label><input type="text" id="fullname" name="fullname" required><label for="email">Email address</label><input type="email" id="email" name="email" required><label for="phone">Phone number</label><input type="tel" id="phone" name="phone"></fieldset><fieldset><legend>Product details</legend><label for="collection">Collection</label><select id="collection" name="collection"><option>Mansion Affairs</option><option>Golden Resort</option><option>Angel Kind</option><option>Love Hoops Dreams</option><option>Zeen0 FC</option></select><label for="product">Product type</label><select id="product" name="product"><option>Hoodie</option><option>T-Shirt</option><option>Crop Top</option><option>Jacket</option><option>Match Jersey</option></select><label for="size">Size</label><select id="size" name="size"><option>Small</option><option>Medium</option><option>Large</option><option>XL</option><option>XXL</option></select><label for="quantity">Quantity</label><input type="number" id="quantity" name="quantity" min="1" value="1"></fieldset><fieldset><legend>Additional information</legend><label for="message">Message</label><textarea id="message" name="message"></textarea></fieldset><div class="form-actions"><button class="button" type="submit">Submit enquiry</button><button class="button" type="reset">Clear</button></div><p data-form-message class="lede" hidden></p></form></div></div></section>
     </main>
-
-    <hr>
-
-    <footer>
-
-        <p>&copy; 2026 The_LandLords.Rsa</p>
-
-        <p>RENT IS DUE</p>
-
-    </footer>
-
+    <footer class="site-footer"><span>&copy; 2026 The_LandLords.Rsa</span><strong>RENT IS DUE</strong><span>Instagram &middot; TikTok &middot; WhatsApp</span></footer>
 </body>
 
 </html>

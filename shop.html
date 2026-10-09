@@ -5,195 +5,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The_LandLords.Rsa | Shop</title>
-    <link rel="stylesheet" href="css/style.css">
-
-    <style>
-    /* INTERNAL - Shop page only */
-    article { background:#111; border:1px solid #222; }
-    article h3 { color:#fff; }
-    article h3 span { color:#D4FF00; }
-</style>
+    <link rel="stylesheet" href="site.css">
+    <script src="site.js" defer></script>
 </head>
 
 <body>
-
-    <header>
-
-        <h1>The_LandLords.Rsa</h1>
-
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="shop.html">Shop</a> |
-            <a href="enquiry.html">Enquiry</a> |
+    <header class="site-header">
+        <a class="brand-logo" href="index.html"><img src="images/logo.png" alt="THE LANDLORDS.RSA" class="logo"></a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html" aria-current="page">Shop</a>
+            <a href="enquiry.html">Enquiry</a>
             <a href="contact.html">Contact</a>
         </nav>
-
-        <hr>
-
-        <!-- INLINE CSS EXAMPLES - FOR ASSIGNMENT -->
-<header>
-    <h1 style="color:#ffffff; letter-spacing:6px;">THE_LANDLORDS.RSA</h1>
-    <nav>
-        <a href="index.html" style="color:#D4FF00; opacity:1;">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-<section class="hero" style="background:#000000; text-align:center; padding:100px 8%;">
-    <h2 style="color:#D4FF00; font-size:5rem; margin-bottom:20px;">RENT IS DUE</h2>
-    <p style="color:#aaaaaa; max-width:600px; margin:0 auto;">Premium streetwear engineered for landlords, not tenants.</p>
-    <img src="hero.jpg" alt="Hero" style="max-width:700px; width:100%; margin:40px auto 0 auto; display:block; border:1px solid #222;">
-</section>
-
-<!-- inline css for price highlight -->
-<article>
-    <h3>Mansion Affairs Shorts</h3>
-    <p style="color:#D4FF00; font-weight:800; font-size:18px;">R1250</p>
-    <p style="font-size:11px; color:#666; text-transform:uppercase; letter-spacing:2px;">In Stock - Limited</p>
-</article>
-
     </header>
 
     <main>
-
-        <section>
-
-            <h2>Shop Collections</h2>
-
-            <p>
-                Explore our latest streetwear collections.
-            </p>
-
+        <section class="shop-hero">
+            <span class="eyebrow">The latest uniform</span>
+            <h1>RENT<br>IS DUE</h1>
+            <p>Explore each collection by garment. Choose the colour you want and the garment tone changes instantly without creating a separate product for every option.</p>
         </section>
 
-        <hr>
-
-        <section>
-
-            <article>
-
-                <h3>Mansion Affairs</h3>
-
-                <img src="images/collections/mansion-affairs.png"
-                     alt="Mansion Affairs Collection"
-                     width="300">
-
-                <p>
-                    A luxury-inspired streetwear collection featuring bold
-                    graphics and premium designs.
-                </p>
-
-                <p><strong>Products:</strong></p>
-
-                <ul>
-                    <li>Hoodies</li>
-                    <li>T-Shirts</li>
-                    <li>Crop Tops</li>
-                </ul>
-
-            </article>
-
+        <section class="collection" aria-labelledby="mansion-title">
+            <div class="collection-heading"><h2 id="mansion-title">Mansion Affairs</h2><p>Bold. Exclusive. Timeless.</p></div>
+            <div class="product-grid">
+                <article class="product-card" data-default-color="black">
+                    <div class="product-visual"><img class="product-image" src="images/products/The Mansion Affair Hoodie(Front).png" alt="Mansion Affairs hoodie front"></div>
+                    <div class="product-copy"><span class="product-type">Hoodie</span><h3>Mansion Affairs Hoodie</h3><div class="product-meta"><span class="product-collection">Mansion Affairs</span><span class="product-colors">Black</span></div><a class="button" href="enquiry.html?collection=Mansion%20Affairs&product=Hoodie">Enquire</a></div>
+                </article>
+                <article class="product-card" data-default-color="black">
+                    <div class="product-visual"><img class="product-image" src="images/products/The Mansion Affairs T-shirt(Front).png" alt="Mansion Affairs T-shirt front"></div>
+                    <div class="product-copy"><span class="product-type">T-Shirt</span><h3>Mansion Affairs T-Shirt</h3><div class="product-meta"><span class="product-collection">Mansion Affairs</span><span class="product-colors">Black</span></div><a class="button" href="enquiry.html?collection=Mansion%20Affairs&product=T-Shirt">Enquire</a></div>
+                </article>
+                <article class="product-card" data-default-color="black">
+                    <div class="product-visual zeeno-stage" tabindex="0" aria-label="Mansion Affairs crop top. Front and back views.">
+                        <img class="product-image jersey-face jersey-front" src="images/products/The Mansion Affairs Crop-Top(Front).jpeg" alt="Mansion Affairs crop top front">
+                        <img class="jersey-face jersey-back" src="images/products/The Mansion Affairs Crop-Top(Back).jpeg" alt="Mansion Affairs crop top back">
+                    </div>
+                    <div class="product-copy"><span class="product-type">Crop Top</span><h3>Mansion Affairs Crop Top</h3><div class="product-meta"><span class="product-collection">Mansion Affairs</span><span class="product-colors">Black</span></div><a class="button" href="enquiry.html?collection=Mansion%20Affairs&product=Crop%20Top">Enquire</a></div>
+                </article>
+            </div>
         </section>
 
-        <hr>
-
-        <section>
-
-            <article>
-
-                <h3>Golden Resort</h3>
-
-                <img src="C:\Users\User\Downloads\Goldenrentcoll.png"
-                     alt="Golden Resort Collection"
-                     width="300">
-
-                <p>
-                    Inspired by luxury escapes and modern Y2K fashion.
-                </p>
-
-                <p><strong>Products:</strong></p>
-
-                <ul>
-                    <li>Hoodies</li>
-                    <li>T-Shirts</li>
-                    <li>Crop Tops</li>
-                </ul>
-
-            </article>
-
+        <section class="collection" aria-labelledby="golden-title">
+            <div class="collection-heading"><h2 id="golden-title">Golden Resort</h2><p>Escape the ordinary.</p></div>
+            <div class="product-grid">
+                <article class="product-card" data-default-color="black">
+                    <div class="product-visual"><img class="product-image" src="images/products/Golden Rent hoodie(Front).png" alt="Golden Resort hoodie front"></div>
+                    <div class="product-copy"><span class="product-type">Hoodie</span><h3>Golden Resort Hoodie</h3><div class="product-meta"><span class="product-collection">Golden Resort</span><span class="product-colors">Black</span></div><a class="button" href="enquiry.html?collection=Golden%20Resort&product=Hoodie">Enquire</a></div>
+                </article>
+                <article class="product-card" data-default-color="black">
+                    <div class="product-visual"><img class="product-image" src="images/products/Golden Rent T-shirt(Front).png" alt="Golden Resort T-shirt front"></div>
+                    <div class="product-copy"><span class="product-type">T-Shirt</span><h3>Golden Resort T-Shirt</h3><div class="product-meta"><span class="product-collection">Golden Resort</span><span class="product-colors">Black</span></div><a class="button" href="enquiry.html?collection=Golden%20Resort&product=T-Shirt">Enquire</a></div>
+                </article>
+                <article class="product-card" data-default-color="black">
+                    <div class="product-visual zeeno-stage" tabindex="0" aria-label="Golden Resort crop top. Front and back views.">
+                        <img class="product-image jersey-face jersey-front" src="images/products/Golden Rent Crop-Top(Front).jpeg" alt="Golden Resort crop top front">
+                        <img class="jersey-face jersey-back" src="images/products/Golden Rent Crop-Top(Back).jpeg" alt="Golden Resort crop top back">
+                    </div>
+                    <div class="product-copy"><span class="product-type">Crop Top</span><h3>Golden Resort Crop Top</h3><div class="product-meta"><span class="product-collection">Golden Resort</span><span class="product-colors">Black</span></div><a class="button" href="enquiry.html?collection=Golden%20Resort&product=Crop%20Top">Enquire</a></div>
+                </article>
+            </div>
         </section>
 
-        <hr>
-
-        <section>
-
-            <article>
-
-                <h3>Angel Kind</h3>
-
-                <img src="C:\Users\User\Downloads\AngelKindcoll.png"
-                     alt="Angel Kind Collection"
-                     width="300">
-
-                <p>
-                    A collection combining faith, creativity and
-                    contemporary streetwear culture.
-                </p>
-
-                <p><strong>Products:</strong></p>
-
-                <ul>
-                    <li>Hoodies</li>
-                    <li>T-Shirts</li>
-                    <li>Crop Tops</li>
-                </ul>
-
-            </article>
-
+        <section class="collection" aria-labelledby="angel-title">
+            <div class="collection-heading"><h2 id="angel-title">Angel Kind</h2><p>Pure soul. Strong spirit.</p></div>
+            <div class="product-grid">
+                <article class="product-card" data-default-color="black">
+                    <div class="product-visual"><img class="product-image" src="images/products/Angel Kind Hoodie(Front).png" alt="Angel Kind hoodie front"></div>
+                    <div class="product-copy"><span class="product-type">Hoodie</span><h3>Angel Kind Hoodie</h3><div class="product-meta"><span class="product-collection">Angel Kind</span><span class="product-colors">Black</span></div><a class="button" href="enquiry.html?collection=Angel%20Kind&product=Hoodie">Enquire</a></div>
+                </article>
+                <article class="product-card" data-default-color="black">
+                    <div class="product-visual"><img class="product-image" src="images/products/Angel Kind T-shirt(Front).png" alt="Angel Kind T-shirt front"></div>
+                    <div class="product-copy"><span class="product-type">T-Shirt</span><h3>Angel Kind T-Shirt</h3><div class="product-meta"><span class="product-collection">Angel Kind</span><span class="product-colors">Black</span></div><a class="button" href="enquiry.html?collection=Angel%20Kind&product=T-Shirt">Enquire</a></div>
+                </article>
+                <article class="product-card" data-default-color="black">
+                    <div class="product-visual zeeno-stage" tabindex="0" aria-label="Angel Kind crop top. Front and back views.">
+                        <img class="product-image jersey-face jersey-front" src="images/products/Angel Kind Crop-Top(Front).jpeg" alt="Angel Kind crop top front">
+                        <img class="jersey-face jersey-back" src="images/products/Angel Kind Crop-Top(Back).jpeg" alt="Angel Kind crop top back">
+                    </div>
+                    <div class="product-copy"><span class="product-type">Crop Top</span><h3>Angel Kind Crop Top</h3><div class="product-meta"><span class="product-collection">Angel Kind</span><span class="product-colors">Black</span></div><a class="button" href="enquiry.html?collection=Angel%20Kind&product=Crop%20Top">Enquire</a></div>
+                </article>
+            </div>
         </section>
 
-        <hr>
-
-        <section>
-
-            <article>
-
-                <h3>Love Hoops Dreams</h3>
-
-                <img src="images/collections/love-hoops-dreams.png"
-                     alt="Love Hoops Dreams Collection"
-                     width="300">
-
-                <p>
-                    Basketball-inspired streetwear designed for dreamers,
-                    creators and trendsetters.
-                </p>
-
-                <p><strong>Products:</strong></p>
-
-                <ul>
-                    <li>Hoodies</li>
-                    <li>T-Shirts</li>
-                    <li>Crop Tops</li>
-                </ul>
-
-            </article>
-
+        <section class="collection" aria-labelledby="hoops-title">
+            <div class="collection-heading"><h2 id="hoops-title">Love Hoops Dreams</h2><p>Built on the court. Worn on the block.</p></div>
+            <div class="product-grid">
+                <article class="product-card" data-default-color="white">
+                    <div class="product-visual"><img class="product-image" src="images/products/Love hoops and dreams Hoodie(Front),White.png" alt="Love Hoops Dreams white hoodie front"></div>
+                    <div class="product-copy"><span class="product-type">Hoodie</span><h3>Love Hoops Dreams Hoodie</h3><div class="product-meta"><span class="product-collection">Love Hoops Dreams</span><span class="product-colors">Choose colour</span></div><div class="variant-row" aria-label="Select colour for Love Hoops Dreams Hoodie"><button type="button" class="color-swatch is-active" data-color="white" style="--swatch:#f2f0eb" aria-label="White" aria-pressed="true" title="White"></button><button type="button" class="color-swatch" data-color="black" style="--swatch:#111111" aria-label="Black" aria-pressed="false" title="Black"></button></div><a class="button" href="enquiry.html?collection=Love%20Hoops%20Dreams&product=Hoodie">Enquire</a></div>
+                </article>
+                <article class="product-card" data-default-color="black">
+                    <div class="product-visual"><img class="product-image" src="images/products/Love hoops and dreams T-shirt (Front), Black.png" alt="Love Hoops Dreams black T-shirt front"></div>
+                    <div class="product-copy"><span class="product-type">T-Shirt</span><h3>Love Hoops Dreams T-Shirt</h3><div class="product-meta"><span class="product-collection">Love Hoops Dreams</span><span class="product-colors">Choose colour</span></div><div class="variant-row" aria-label="Select colour for Love Hoops Dreams T-Shirt"><button type="button" class="color-swatch is-active" data-color="black" style="--swatch:#111111" aria-label="Black" aria-pressed="true" title="Black"></button><button type="button" class="color-swatch" data-color="white" style="--swatch:#f2f0eb" aria-label="White" aria-pressed="false" title="White"></button></div><a class="button" href="enquiry.html?collection=Love%20Hoops%20Dreams&product=T-Shirt">Enquire</a></div>
+                </article>
+                <article class="product-card" data-default-color="white">
+                    <div class="product-visual zeeno-stage" tabindex="0" aria-label="Love Hoops Dreams crop top. Front and back views.">
+                        <img class="product-image jersey-face jersey-front" src="images/products/Love hoops and dreams Crop-Top (Front),White.png" alt="Love Hoops Dreams white crop top front">
+                        <img class="jersey-face jersey-back" src="images/products/Love hoops and dreams Crop-Top (Back),White.png" alt="Love Hoops Dreams white crop top back">
+                    </div>
+                    <div class="product-copy"><span class="product-type">Crop Top</span><h3>Love Hoops Dreams Crop Top</h3><div class="product-meta"><span class="product-collection">Love Hoops Dreams</span><span class="product-colors">Choose colour</span></div><div class="variant-row" aria-label="Select colour for Love Hoops Dreams Crop Top"><button type="button" class="color-swatch is-active" data-color="white" style="--swatch:#f2f0eb" aria-label="White" aria-pressed="true" title="White"></button><button type="button" class="color-swatch" data-color="black" style="--swatch:#111111" aria-label="Black" aria-pressed="false" title="Black"></button></div><a class="button" href="enquiry.html?collection=Love%20Hoops%20Dreams&product=Crop%20Top">Enquire</a></div>
+                </article>
+            </div>
         </section>
 
+        <section class="collection" aria-labelledby="zeeno-title">
+            <div class="collection-heading"><div><span class="eyebrow">05 / Matchday edition</span><h2 id="zeeno-title">Zeen0 FC</h2></div><p>Unbreakable. Unstoppable. Made for the club.</p></div>
+            <div class="product-grid">
+                <article class="product-card" data-default-color="black">
+                    <div class="product-visual zeeno-stage" tabindex="0" aria-label="Zeen0 FC jersey. Front and back views.">
+                        <span class="stage-glow"></span>
+                        <img class="product-image jersey-face jersey-front" src="images/products/zeen0-fc/ARA%20Futsal%20Club%20Jersey%20-%20Front.png" alt="Zeen0 FC jersey front">
+                        <img class="jersey-face jersey-back" src="images/products/zeen0-fc/ARA%20Futsal%20Club%20Jersey%20-%20Back.png" alt="Zeen0 FC jersey back">
+                    </div>
+                    <div class="product-copy"><div class="zeeno-meta"><span>Match jersey</span><span>Front / back turntable</span></div><h3>Zeen0 FC Jersey</h3><p class="material-note">A club-ready graphic jersey presented in a dark studio stage with raised light, depth shadow and slow cinematic rotation.</p><div class="product-meta"><span class="product-collection">Zeen0 FC</span><span class="product-colors">Club palette</span></div><a class="button" href="enquiry.html?collection=Zeen0%20FC&product=Match%20Jersey">Enquire</a></div>
+                </article>
+            </div>
+        </section>
     </main>
 
-    <hr>
-
-    <footer>
-
-        <p>&copy; 2026 The_LandLords.Rsa</p>
-
-        <p>RENT IS DUE</p>
-
-    </footer>
+    <footer class="site-footer"><span>&copy; 2026 The_LandLords.Rsa</span><strong>RENT IS DUE</strong><span>Instagram &middot; TikTok &middot; WhatsApp</span></footer>
 
 </body>
 
