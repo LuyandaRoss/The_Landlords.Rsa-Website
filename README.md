@@ -1,4 +1,4 @@
-The_LandLords.Rsa Website "THIS IS A FICTIONAL BUSINESS"
+The_LandLords.Rsa Website
 
 Project Overview
 
@@ -83,8 +83,6 @@ TheLandlordsRSA
 ├── README.md
 
 └── CHANGELOG.md
-
-THIS IS A FICTIONAL BUSINESS
 
 Author
 Luyanda

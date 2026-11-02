@@ -67,24 +67,80 @@ var product = document.querySelector('#product');
 if (collection && params.has('collection')) collection.value = params.get('collection');
 if (product && params.has('product')) product.value = params.get('product');
 
-var enquiryForm = document.querySelector('[data-enquiry-form]');
-if (enquiryForm) {
-    enquiryForm.addEventListener('submit', function (event) {
-        event.preventDefault();
-        var confirmation = document.querySelector('[data-form-message]');
-        confirmation.textContent = 'Enquiry received. We will get back to you shortly.';
-        confirmation.hidden = false;
-        enquiryForm.reset();
+    var lightbox = document.getElementById('imageLightbox');
+
+if (lightbox) {
+    var lightboxImage = document.getElementById('lightboxImage');
+    var lightboxCaption = document.getElementById('lightboxCaption');
+
+    var galleryImages = Array.from(
+        document.querySelectorAll('.product-visual img')
+    );
+
+    var currentImageIndex = 0;
+
+    function showLightboxImage(index) {
+        currentImageIndex =
+            (index + galleryImages.length) % galleryImages.length;
+
+        var selectedImage = galleryImages[currentImageIndex];
+
+        lightboxImage.src = selectedImage.src;
+        lightboxImage.alt = selectedImage.alt;
+        lightboxCaption.textContent = selectedImage.alt;
+    }
+
+    function openLightbox(index) {
+        showLightboxImage(index);
+        lightbox.classList.add('active');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    galleryImages.forEach(function (img, index) {
+        img.addEventListener('click', function () {
+            openLightbox(index);
+        });
+    });
+
+    document.querySelector('.lightbox-close')
+        .addEventListener('click', closeLightbox);
+
+    document.querySelector('.lightbox-prev')
+        .addEventListener('click', function () {
+            showLightboxImage(currentImageIndex - 1);
+        });
+
+    document.querySelector('.lightbox-next')
+        .addEventListener('click', function () {
+            showLightboxImage(currentImageIndex + 1);
+        });
+
+    lightbox.addEventListener('click', function (event) {
+        if (event.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    document.addEventListener('keydown', function (event) {
+        if (!lightbox.classList.contains('active')) return;
+
+        if (event.key === 'Escape') closeLightbox();
+
+        if (event.key === 'ArrowRight') {
+            showLightboxImage(currentImageIndex + 1);
+        }
+
+        if (event.key === 'ArrowLeft') {
+            showLightboxImage(currentImageIndex - 1);
+        }
     });
 }
 
-var contactForm = document.querySelector('[data-contact-form]');
-if (contactForm) {
-    contactForm.addEventListener('submit', function (event) {
-        event.preventDefault();
-        var confirmation = document.querySelector('[data-form-message]');
-        confirmation.textContent = 'Message received. The LandLords team will be in touch.';
-        confirmation.hidden = false;
-        contactForm.reset();
-    });
-}
+
