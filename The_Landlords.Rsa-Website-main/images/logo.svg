@@ -1,0 +1,30 @@
+<svg viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg" width="200" height="53">
+  <defs>
+    <style>
+      .logo-outline { fill: none; stroke: white; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+      .logo-text { font-family: 'Arial', sans-serif; font-weight: 900; font-size: 56px; fill: white; letter-spacing: 1px; }
+      .logo-subtitle { font-family: 'Arial', sans-serif; font-size: 14px; fill: white; letter-spacing: 2px; font-weight: bold; }
+    </style>
+  </defs>
+  
+  <!-- Outer oval badge -->
+  <ellipse cx="300" cy="80" rx="280" ry="70" class="logo-outline"/>
+  <ellipse cx="300" cy="80" rx="265" ry="56" class="logo-outline"/>
+  
+  <!-- Star at top -->
+  <g transform="translate(300, 25)">
+    <polygon points="0,-14 3.5,-4.5 14,-4.5 5,2 8,12 0,6 -8,12 -5,2 -14,-4.5 -3.5,-4.5" fill="white"/>
+  </g>
+  
+  <!-- Left banner ribbon -->
+  <path d="M 55 65 L 35 52 L 35 100 Q 45 95 55 88" class="logo-outline"/>
+  
+  <!-- Right banner ribbon -->
+  <path d="M 545 65 L 565 52 L 565 100 Q 555 95 545 88" class="logo-outline"/>
+  
+  <!-- Main text -->
+  <text x="300" y="100" class="logo-text" text-anchor="middle">THE_LANDLORDS.RSA</text>
+  
+  <!-- Subtitle -->
+  <text x="300" y="128" class="logo-subtitle" text-anchor="middle">• EST. 2R2Z •</text>
+</svg>
